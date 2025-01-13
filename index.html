@@ -40,11 +40,52 @@
                      <img src="./assets/images/icon-upload.svg" alt="" class="uploaded-image" id="uploaded-image">
                      <div id="message-action" class="message-action">drag and drop or click to upload </div>
                      <div class="file-action" id="file-action">
-                        
+                        <button id="remove-image" type="button">
+                            remove-image
+                        </button>
+                        <button id="change-image" type="button">
+                            change-image
+                        </button>
                      </div>
                     </div>
+                    <p class="upload-hint" id="upload-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                        upload your photos (jpg or PNG maxsize:500kb)
+                    </p>
                 </div>
+                <div class="form-item">
+                    <label for="full name">full name</label>
+                    <input type="text" class="required">
+                    <p class="hint-text">
+                        <!-- svg icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                        please enter your full name 
+                    </p>
+                </div>
+                
+                <div class="form-item">
+                    <label for="email">email adddress</label>
+                    <input type="mail" class="required" id="mail">
+                    <p class="hint-text">
+                        <!-- svg icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                        please enter ypuremail address
+                    </p>
+                
+                </div>
+                    <label for="github">github username</label>
+                    <input type="github" class="required" id="github">
+                    <p class="hint-text">
+                        <!-- svg icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                        please enter a valid username
+                    </p>
+                    <button class="generate-ticket" id="generate-ticket" type="submit" >generate my ticket</button>
+                    /div>
             </form>
+            <div id="display-ticket" class="display-ticket" style="display: none;">
+                
+            </div>
         </div>
     </div>
 </body>
