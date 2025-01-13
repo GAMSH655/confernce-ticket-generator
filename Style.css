@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  box-sizing: border-box;  
+}
+:root{
+--Neutral-0: hsl(0, 0%, 100%);
+--Neutral-300: hsl(252, 6%, 83%);
+--Neutral-500: hsl(245, 15%, 58%);
+--Neutral-700: hsl(245, 19%, 35%);
+--Neutral-900: hsl(248, 70%, 10%);
+
+/* orange */
+--Orange-500: hsl(7, 88%, 67%);
+--Orange-700: hsl(7, 71%, 60%);
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    background-color: var(--Neutral-900);
+    color: #fff;
+    min-height: 100vh;
+    font-family: Inconsolata ,serif;
+}
+.image-container{
+    background-image: url("./assets/images/background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100dvh;
+    position:relative;
+    aspect-ratio: 16/9;
+    overflow-y: hidden;
+    display: grid;
+    place-content: center;
+}
+.svg-image{
+  position: absolute;
+}
+.svg-image:nth-child(1){
+    width:100%;
+}
+.svg-image:nth-child(1) img{
+    width:100%;
+}
+.svg-image:nth-child(2){
+   top: 100px;
+   right: 0;
+}
+.svg-image:nth-child(3){
+   left: 0;
+   bottom: 0;
+}
+.svg-image:nth-child(4){
+  top: -100px;
+  left: 100px;
+}
+
+.svg-image:nth-child(5){
+  top: 50%;
+  left: 350px;
+}
+.headings{
+    text-align: center;
+}
+.headings h1{
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.headings p {
+margin-bottom: 2rem;
+font-size: 1.2rem;
+}
+.gradient-text{
+    background: var(--gradient-text-start);
+    background: linear-gradient(to right, var(--gradient-text-start) 10%, var(--gradient-text-end) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.header-email{
+    color: var(--Orange-500);
+}
